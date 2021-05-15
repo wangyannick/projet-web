@@ -1,0 +1,38 @@
+.icon-twitter::before {
+  content: "\f243";
+}
+.icon-facebook::before {
+  content: "\f231";
+}
+.icon-google::before {
+  content: "\f235";
+}
+.icon-linkedin::before {
+  content: "\f239";
+}
+
+.icon-dribble::before {
+  content: "\f22c";
+}
+
+.icon-arrow::before {
+  content: "\f3d3";
+}
+
+.icon-twitter,
+.icon-facebook,
+.icon-google,
+.icon-linkedin,
+.icon-dribble,
+.icon-arrow {
+  display: inline-block;
+  font-family: "Ionicons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -5,4 +5,31 @@ html {
 p {
   margin-top: 0;
   margin-bottom: 0;
+  font-family: "Poppins-Regular";
+  font-size: 14px;
+}
+
+p.bold,
+strong,
+a {
+  font-family: "Poppins-Bold";
+}
+
+h2 {
+  font-family: "Poppins-Bold";
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-family: "Poppins-Bold";
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p.lightitalic {
+  font-family: "Poppins-LightItalic";
+  margin: 0;
 }

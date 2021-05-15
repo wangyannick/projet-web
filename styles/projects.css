@@ -1,0 +1,107 @@
+section.projects {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0px;
+}
+
+.projects > .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 180px;
+}
+
+.top > .top-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-right p {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.top-right p.active {
+  color: var(--color);
+}
+
+.top-right p:hover {
+  color: var(--color);
+}
+
+section.projects .bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-top: 15px;
+}
+
+section.projects .bottom .projects-item {
+  width: 360px;
+  height: 480px;
+
+  margin: 15px;
+
+  cursor: pointer;
+  position: relative;
+}
+
+.projects-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.projects-item .projects-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.projects-hover:hover {
+  background: rgba(206, 224, 2, 0.85);
+}
+
+.projects-hover .projects-title {
+  position: absolute;
+  bottom: 50px;
+  color: white;
+  margin-right: 110px;
+  margin-left: 20px;
+}
+
+.projects-hover:hover .projects-title {
+  top: 30px;
+  color: black;
+}
+
+.projects-hover .projects-description {
+  margin: 0 20px;
+  display: none;
+}
+
+.projects-hover:hover .projects-description {
+  position: absolute;
+  color: black;
+  top: 200px;
+  display: flex;
+}
+
+.projects-hover .more {
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  margin: 0 20px;
+}
+
+.projects-hover:hover .more {
+  color: black;
+}
+
+.more .icon {
+  margin-left: 10px;
+}

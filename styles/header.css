@@ -1,0 +1,28 @@
+.header-container {
+  display: flex;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.right-header {
+  display: flex;
+}
+
+.social {
+}
+
+.social .icon {
+  color: black;
+  cursor: pointer;
+
+  transition: color 0.2s ease;
+}
+
+.social .icon:hover {
+  color: var(--color);
+}

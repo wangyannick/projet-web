@@ -7,7 +7,7 @@ Web project for school developed in plain HTML, CSS and Javascript.
 ```
 git clone https://github.com/wangyannick/projet-web.git
 cd projet-web
-npm install
+npm install -g live-server
 live-server
 ```
 

@@ -25,6 +25,9 @@ section.projects {
     flex-direction: column;
     align-items: flex-start;
   }
+  .top > .top-right {
+    margin-top: 15px;
+  }
 }
 
 @media (max-width: 950px) {
@@ -127,8 +130,4 @@ section.projects .bottom .projects-item {
 
 .projects-hover:hover .more {
   color: black;
-}
-
-.more .icon {
-  margin-left: 10px;
 }

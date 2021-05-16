@@ -9,20 +9,30 @@
   height: 80px;
 }
 
+.left-header {
+  display: flex;
+  align-items: center;
+}
+
+.left-header img {
+  width: 28px;
+  height: 28px;
+}
+
+.left-header .brand {
+  margin-left: 5px;
+}
+.left-header .brand h3 {
+  line-height: 10px;
+  font-size: 16px;
+}
+.left-header .brand p {
+  line-height: 12px;
+}
+
 .right-header {
   display: flex;
 }
 
-.social {
-}
-
-.social .icon {
-  color: black;
-  cursor: pointer;
-
-  transition: color 0.2s ease;
-}
-
-.social .icon:hover {
-  color: var(--color);
+.right-header .social {
 }

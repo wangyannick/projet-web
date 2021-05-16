@@ -26,7 +26,7 @@
 .icon-dribble,
 .icon-arrow {
   display: inline-block;
-  font-family: "Ionicons";
+  font-family: "Ionicons" !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -35,4 +35,21 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  font-size: 20px !important;
+}
+
+.icon {
+  color: black;
+  cursor: pointer;
+
+  transition: color 0.2s ease;
+}
+
+.icon:hover {
+  color: var(--color);
+}
+
+.icon:not(:first-of-type) {
+  margin-left: 15px;
 }

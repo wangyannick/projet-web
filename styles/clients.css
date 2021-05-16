@@ -8,7 +8,34 @@ section.clients {
   justify-content: space-between;
   align-items: center;
 
-  margin-left: 180px;
+  margin: 0 auto;
+  width: 1280px;
+}
+
+@media (max-width: 1380px) {
+  .clients > .top {
+    width: 1100px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .clients > .top {
+    width: 900px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 950px) {
+  .clients > .top {
+    width: 780px;
+  }
+}
+
+@media (max-width: 820px) {
+  .clients > .top {
+    width: 100%;
+  }
 }
 
 .clients-item {

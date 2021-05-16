@@ -2,11 +2,12 @@
 @import "header.css";
 @import "carousel.css";
 @import "fontFamily.css";
-@import "experience.css";
+@import "about.css";
 @import "projects.css";
 @import "icon.css";
 @import "clients.css";
 @import "news.css";
+@import "footer.css";
 
 :root {
   --color: #cee002;

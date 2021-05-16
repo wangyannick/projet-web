@@ -42,6 +42,10 @@
   align-items: center;
 }
 
+.right-header .social a {
+  text-decoration: none;
+}
+
 @media (max-width: 660px) {
   .right-header p,
   .header-separator {

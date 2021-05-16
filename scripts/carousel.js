@@ -9,7 +9,7 @@ window.addEventListener("load", function () {
 
   let actualIndex = 0;
 
-  var intervalID = window.setInterval(autoPlay, 5000);
+  window.setInterval(autoPlay, 5000);
 
   function autoPlay() {
     actualIndex >= img.length - 1 ? (actualIndex = 0) : (actualIndex += 1);

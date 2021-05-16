@@ -1,8 +1,14 @@
-.carousel img {
+.carousel .carousel-item {
   width: 100%;
-  height: 90%;
+  height: 90vh;
 
   display: none;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
 }
 
 .carousel {
@@ -39,10 +45,62 @@ i.icon-arrow-back {
   margin-left: 30px;
 }
 
-.carousel img.active {
+.carousel .carousel-item.active {
   display: flex;
 
   animation: fade 0.8s;
+  position: relative;
+}
+
+.carousel-item-text {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  color: white;
+
+  border: 3px solid var(--color);
+
+  height: 50vh;
+  width: 20vw;
+
+  padding: 20px;
+
+  top: 20%;
+  left: 10%;
+
+  cursor: pointer;
+}
+
+.carousel-item-text i {
+  color: white;
+  margin-left: 25px;
+
+  position: relative;
+  top: 3px;
+}
+
+.carousel-pagination {
+  position: absolute;
+  display: flex;
+
+  bottom: 10%;
+  right: 10%;
+}
+
+.carousel-pagination .pagination-item {
+  width: 25px;
+  height: 5px;
+  background-color: #999;
+  transition: background-color 0.4s ease;
+
+  margin: 0 5px;
+}
+
+.carousel-pagination .pagination-item.active {
+  background-color: var(--color);
 }
 
 @keyframes fade {

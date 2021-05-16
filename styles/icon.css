@@ -19,12 +19,22 @@
   content: "\f3d3";
 }
 
+.icon-arrow-back::before {
+  content: "\f360";
+}
+
+.icon-arrow-next::before {
+  content: "\f362";
+}
+
 .icon-twitter,
 .icon-facebook,
 .icon-google,
 .icon-linkedin,
 .icon-dribble,
-.icon-arrow {
+.icon-arrow,
+.icon-arrow-back,
+.icon-arrow-next {
   display: inline-block;
   font-family: "Ionicons" !important;
   font-style: normal;

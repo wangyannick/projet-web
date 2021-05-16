@@ -5,6 +5,40 @@
   display: none;
 }
 
+.carousel {
+  position: relative;
+}
+
+.carousel-controls {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carousel-controls i {
+  font-size: 58px !important;
+  cursor: pointer;
+  color: white;
+  text-shadow: 1px 1px 8px var(--color);
+  transition: color 0.4s ease;
+}
+
+.carousel-controls i:hover {
+  color: var(--color);
+}
+
+i.icon-arrow-next {
+  margin-right: 30px;
+}
+
+i.icon-arrow-back {
+  margin-left: 30px;
+}
+
 .carousel img.active {
   display: flex;
 

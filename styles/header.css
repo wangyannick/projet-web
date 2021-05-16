@@ -30,9 +30,27 @@
   line-height: 12px;
 }
 
-.right-header {
-  display: flex;
+.header-separator {
+  height: 40px;
+  width: 1px;
+  background-color: #999;
+  margin: 0 20px;
 }
 
-.right-header .social {
+.right-header {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 660px) {
+  .right-header p,
+  .header-separator {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .right-header .social {
+    display: none;
+  }
 }

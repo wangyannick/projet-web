@@ -13,8 +13,13 @@ window.addEventListener("load", function () {
     .querySelector("i.icon-arrow-back");
 
   let actualIndex = 0;
+  var intervalID = null;
+  intervalManager(true, nextSlide, 5000);
 
-  window.setInterval(nextSlide, 5000);
+  function intervalManager(flag, animate, time) {
+    if (flag) intervalID = setInterval(animate, time);
+    else clearInterval(intervalID);
+  }
 
   function nextSlide() {
     img[actualIndex].classList.remove("active");
@@ -32,10 +37,14 @@ window.addEventListener("load", function () {
   }
 
   next.addEventListener("click", function () {
+    intervalManager(false);
     nextSlide();
+    intervalManager(true, nextSlide, 5000);
   });
 
   back.addEventListener("click", function () {
+    intervalManager(false);
     previousSlide();
+    intervalManager(true, nextSlide, 5000);
   });
 });

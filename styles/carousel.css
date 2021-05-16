@@ -47,8 +47,6 @@ i.icon-arrow-back {
 
 .carousel .carousel-item.active {
   display: flex;
-
-  animation: fade 0.8s;
   position: relative;
 }
 
@@ -101,14 +99,4 @@ i.icon-arrow-back {
 
 .carousel-pagination .pagination-item.active {
   background-color: var(--color);
-}
-
-@keyframes fade {
-  from {
-    transform: translateX(-1200px);
-  }
-
-  to {
-    transform: translateX(0px);
-  }
 }

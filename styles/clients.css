@@ -8,7 +8,7 @@ section.clients {
   justify-content: space-between;
   align-items: center;
 
-  margin: 0 180px;
+  margin-left: 180px;
 }
 
 .clients-item {

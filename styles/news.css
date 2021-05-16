@@ -6,10 +6,9 @@ section.news {
 
 .news > .top {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
-  margin: 0 180px;
+  margin-left: 180px;
 }
 
 section.news .bottom {
